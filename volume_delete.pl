@@ -68,8 +68,7 @@ sub delete_volumes
         print $IN "delete volume=$vol yes\n";
         $l = <$OUT>;
         $l = <$OUT>;
-        print "Done.\nDeleting volume $file from disk ... " if
-($opts{verbose});
+        print "Done.\nDeleting volume $file from disk ... " if ($opts{verbose});
         if (-f $file)
         {
             $count++;
